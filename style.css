@@ -168,6 +168,7 @@ nav i{
     gap: 1.2vh;
     justify-content: center;
     position: relative;
+    color: #fff;
     background-color: #fff;
 }
 .card:nth-child(1){
@@ -185,7 +186,7 @@ nav i{
 
 .card h1{
     font-size: 3vw;
-    margin-top: 40vh;
+    margin-top: 45vh;
 }
 .card button{
     font-size: 1vw;
@@ -195,7 +196,9 @@ nav i{
     color: #fff;
     padding: .8vw 1.8vw;
 }   
-
+.card:nth-child(2) button{
+    box-shadow: 0px 1.2px 4px 1px rgba(255, 255, 255, 0.315);
+}
 #pepsi{
     position: absolute;
     width: 90%;
