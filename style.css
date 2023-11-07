@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Product Sans;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 9999;
+    position: fixed;
+    justify-content: space-between;
+}
+
+.cntr-nav{
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+}
+nav a,i{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+nav i{
+    font-size: 1.5vw;
+}
+
+.one{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.09s;
+    background: linear-gradient(-30deg,rgb(246, 91, 2),rgb(255, 170, 0));
+}
+
+.one h1{
+    font-size: 23vw;
+    position: absolute;
+    color: #fff;
+}
+#orange2{
+    width: 15%;
+    position: absolute;
+    top: 10%;
+    left: 32%;
+    z-index: 1;
+}
+
+#fanta{
+    width: 40%;
+    z-index: 2;
+}
+
+#orange{
+    position: absolute;
+    width: 18%;
+    z-index: 3;
+    top: 58%;
+    right: 30%;
+}
+
+#leaf,#leaf2,#leaf3{
+    width: 20%;
+    position: absolute;
+}
+#leaf{
+    width: 15%;
+    top: 10%;
+    left: 0%;
+    transform: rotate(60deg);
+}
+
+#leaf2{
+    top: 70%;
+    right: 2%;
+    transform: rotate(-90deg);
+    width: 14%;
+}
+#leaf3{
+    top: 8%;
+    right: 0;
+    width: 21%;
+}
+
+.two{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #f8e7d1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.09s;
+
+}
+
+.lft-two,.rght-two{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(70, 0, 0);
+}
+
+.rght-two{
+    color: #fff;
+    align-items: start;
+}
+
+.rght-two h1{
+    font-size: 4vw;
+    margin-bottom: 20px;
+}
+
+.rght-two p{
+    width: 75%;
+    font-size: 1vw;
+}
+
+.three{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    background: linear-gradient(-30deg,rgb(246, 91, 2),rgb(255, 170, 0));
+}
+
+.card{
+    width: 24vw;
+    margin-top: 24vh;
+    border-radius: 25px;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2vh;
+    justify-content: center;
+    position: relative;
+    background-color: #fff;
+}
+.card:nth-child(1){
+    background-color: #368cd8ee;
+    backdrop-filter: blur(50px);
+}
+.card:nth-child(2){
+    background-color: #f75c02;
+    backdrop-filter: blur(50px);
+}
+.card:nth-child(3){
+    background-color:#cd152d;
+    backdrop-filter: blur(50px);
+}
+
+.card h1{
+    font-size: 3vw;
+    margin-top: 40vh;
+}
+.card button{
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    padding: .8vw 1.8vw;
+}   
+
+#pepsi{
+    position: absolute;
+    width: 90%;
+    top: -22%;
+}
+
+#fantaimg{
+    width: 152%;
+    top: -16%;
+    position: absolute;
+}
+
+#cocacola{
+    width: 62%;
+    top: -18%;
+    position: absolute;
+}
+
+.lemon{
+    width: 25vw;
+    position: absolute;
+    top: -40%;
+}
+
+.four{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(-30deg,rgb(246, 91, 2),rgb(255, 170, 0));
+
+}
+
+@media screen and (max-width:476px){
+    .one,.two,.three,.four{
+        width: 100vw;
+        height: 100vh;
+    }
+    nav{
+        justify-content: space-between;
+        padding: 5px 18px;
+        margin-top: 10px;
+        margin-bottom:10px;
+    }
+    nav a{
+        font-size: 15px;
+    }
+    nav i{
+        font-size: 17px;
+    }
+    .one h1{
+        font-size: 30vw;
+        z-index: 2;
+    }
+    #fanta{
+        height: 350px;
+        width: 160px;
+        object-fit: cover;
+        object-position: center;
+    }
+    #orange2{
+        width: 31%;
+        position: absolute;
+        top: 180px;
+        left: 14%;
+    }
+    #orange{
+        width: 31%;
+        top: 60%;
+        right: 17%;
+    }
+    #leaf3{
+        top: 0%;
+        width: 50%;
+    }
+    #leaf{
+        width: 40%;
+        top: -3%;
+        left: -7%;
+        transform: rotate(140deg);
+    }
+    #leaf2{
+        left: 72%;
+        z-index: 1;
+        width: 17%;
+        top: 39%;
+    }
+    
+    .rght-two h1{
+        font-size: 5.5vw;
+    }
+    .rght-two p{
+        font-size: 2vw;
+        width: 90%;
+    }
+    .three{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        overflow: auto;
+        
+    }
+    .card{
+        height: 60%;
+        width: 65%;
+    }
+    .card h1{
+        color: #fff;
+        font-size: 35px;
+        margin-top: 58%;
+        font-weight: 100;
+        margin-bottom: 20px;
+    }
+    .card button{
+        height: 45px;
+        border-radius: 10px;
+        width: 180px;
+        font-size: 24px;
+    }
+}
